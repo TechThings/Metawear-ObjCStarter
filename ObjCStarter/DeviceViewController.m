@@ -37,20 +37,20 @@
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
         switch (self.device.state) {
             case MBLConnectionStateConnected:
-            self.deviceStatus.text = @"Connected";
-            break;
+                self.deviceStatus.text = @"Connected";
+                break;
             case MBLConnectionStateDiscovery:
-            self.deviceStatus.text = @"Discovery";
-            break;
+                self.deviceStatus.text = @"Discovery";
+                break;
             case MBLConnectionStateConnecting:
-            self.deviceStatus.text = @"Connecting";
-            break;
+                self.deviceStatus.text = @"Connecting";
+                break;
             case MBLConnectionStateDisconnected:
-            self.deviceStatus.text = @"Disconnected";
-            break;
+                self.deviceStatus.text = @"Disconnected";
+                break;
             case MBLConnectionStateDisconnecting:
-            self.deviceStatus.text = @"Disconnecting";
-            break;
+                self.deviceStatus.text = @"Disconnecting";
+                break;
         }
     }];
 }
